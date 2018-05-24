@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <!--Responsive tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!--Force the browser to render according to the latest standards-->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1"> 
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <!--Custom CSS styles-->
@@ -38,6 +38,17 @@
             </div>
             <!--Navigation starts-->
             <div id="nav">
+                <!--Left triangle-->
+                <div id="left-tri"></div>
+                <!--Right triangle-->
+                <div id="right-tri"></div>  
+                
+                <div class="adaptive-navigation-bar">
+                    <button type="button" id="adaptive-navigation-bar-button" onclick="changemenu();"><i class="fa fa-bars"></i>Menu</button>
+                    <ul id="adaptive-navigation-bar-list">
+                        <li><a href="#" class="nav-button-link"><i class="fa fa-home"></i> Home</a></li>
+                    </ul>    
+                </div>
                 <div class="nav-button">
                         <ul>
                             <li class="nav-first-list"><a href="#" class="nav-button-link"><i class="fa fa-home"></i> Home</a></li>
@@ -131,8 +142,7 @@
         <!--con-->
         <div id="con">
             <div id="main-pic">
-                <!--Left triangle-->
-                <div id="left-tri"></div>
+                
                 <!--Carousel start-->
                 <div id="slider">
                     <div>
@@ -168,8 +178,6 @@
                 </div> 
                 <!--Carousel end-->
 
-                <!--Right triangle-->
-                <div id="right-tri"></div>  
             </div>
 
             <!--news start-->
