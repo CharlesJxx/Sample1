@@ -125,6 +125,19 @@ body{
     display: none;
 }
 
+#adaptive-navigation-bar-list li{
+    height: -webkit-fill-available;
+}
+
+.adaptive-navigation-bar-list-link{
+    position: absolute;
+    z-index: 1;
+    background-color: #4e4e4e;
+    color: #fff;
+    width: 100%;
+    padding: 15.5px 24px;
+    text-align: center;
+}
 /* .nav-button {
     height: 49px;
 } */
